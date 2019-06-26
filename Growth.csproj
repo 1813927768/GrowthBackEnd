@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+    <PackageReference Include="MySql.Data" Version="8.0.16" />
+    <PackageReference Include="sqlSugarCore" Version="5.0.0.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="AdviceManage">
+      <HintPath>..\..\AdviceManage\AdviceManage\bin\Debug\netcoreapp2.1\AdviceManage.dll</HintPath>
+    </Reference>
+    <Reference Include="FeedBackManagement">
+      <HintPath>..\..\FeedBackManagement\FeedBackManagement\bin\Debug\netcoreapp2.1\FeedBackManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="TaskManage">
+      <HintPath>..\..\TaskManage\TaskManage\bin\Debug\netcoreapp2.1\TaskManage.dll</HintPath>
+    </Reference>
+    <Reference Include="TomatoManage">
+      <HintPath>..\..\TomatoManage\TomatoManage\bin\Debug\netcoreapp2.1\TomatoManage.dll</HintPath>
+    </Reference>
+    <Reference Include="UserManage">
+      <HintPath>..\..\UserManage\UserManage\bin\Debug\netcoreapp2.1\UserManage.dll</HintPath>
+    </Reference>
+    <Reference Include="UtilModule">
+      <HintPath>..\..\UtilModule\UtilModule\bin\Debug\netcoreapp2.1\UtilModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
